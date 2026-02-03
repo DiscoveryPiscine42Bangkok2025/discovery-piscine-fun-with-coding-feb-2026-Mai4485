@@ -1,0 +1,26 @@
+* { margin: 0; box-sizing: border-box; }
+
+.parallax {
+  height: 100vh;
+  background: center / cover fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.p1 {
+  background-image: url("https://wallpapers.com/images/featured/japan-background-kpyve1mdvc9ujbm8.jpg");
+}
+
+.p2 {
+  background-image: url("https://a.travel-assets.com/findyours-php/viewfinder/images/res40/202000/202377.jpg");
+}
+
+.block {
+  height: 50vh;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
