@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<head>
+  <title>calc</title>
+</head>
+
+<body>
+
+  <form id="calc">
+    <input type="text" id="left">
+    
+    <select id="op">
+      <option value="+">+</option>
+      <option value="-">-</option>
+      <option value="*">*</option>
+      <option value="/">/</option>
+      <option value="%">%</option>
+    </select>
+    
+    <input type="text" id="right">
+
+    <input type="submit" value="Try me!">
+  </form>
+
+  <script>
+    setInterval(function () {
+      alert("Please, use me...");
+    }, 30000);
+
+    function isValidPositiveInt(str) {
+      return /^[0-9]+$/.test(str);
+    }
+
+    document.getElementById("calc").addEventListener("submit", function (e) {
+      e.preventDefault();
+
+      var aStr = document.getElementById("left").value.trim();
+      var bStr = document.getElementById("right").value.trim();
+      var op = document.getElementById("op").value;
+
+      if (!isValidPositiveInt(aStr) || !isValidPositiveInt(bStr)) {
+        alert("Error :(");
+        return;
+      }
+
+      var a = parseInt(aStr, 10);
+      var b = parseInt(bStr, 10);
+
+      if ((op === "/" || op === "%") && b === 0) {
+        alert("It’s over 9000!");
+        console.log("It’s over 9000!");
+        return;
+      }
+
+      var result;
+      if (op === "+") result = a + b;
+      else if (op === "-") result = a - b;
+      else if (op === "*") result = a * b;
+      else if (op === "/") result = a / b;
+      else if (op === "%") result = a % b;
+
+      alert(result);
+      console.log(result);
+    });
+  </script>
+
+</body>
+</html>
