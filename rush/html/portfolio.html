@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>Portfolio - Multi Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Kanit:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/port.css">
+</head>
+<body>
+
+    <div class="profile-toggle" onclick="switchProfile()">
+        <span id="toggle-text">Switch to Jarugit</span>
+    </div>
+
+    <div class="dots" id="dots">
+        <div class="dot active"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+
+    <div class="wrapper" id="wrap">
+        <section id="s1">
+            <div id="profile-content" class="fade-zone">
+                <img src="https://picsum.photos/400/400?grayscale" alt="Profile" class="profile-img" id="p-img"> 
+                <h1 id="p-name">Jirayu Thongchothaung</h1>
+                <p class="subtitle" id="p-tag">Cyber Security & Game Developer</p>
+                <div class="bio" id="p-bio">
+                    มุ่งมั่นในการพัฒนาความปลอดภัยทางไซเบอร์และสร้างสรรค์ประสบการณ์เกมที่แปลกใหม่
+                </div>
+                <div class="skills-bar" id="p-skills">
+                    <span class="skill-badge">Python</span>
+                    <span class="skill-badge">DFIR</span>
+                    <span class="skill-badge">Roblox Lua</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="s2">
+            <h2>PROJECTS</h2>
+            <div class="grid fade-zone" id="project-grid">
+                </div>
+        </section>
+
+        <section id="s3">
+            <h2>CONTACT</h2>
+            <div id="contact-area" class="fade-zone">
+                <a href="#" class="btn" id="p-ig">Instragram</a>
+                <a href="#" class="btn github-btn" id="p-git">Github</a>
+            </div>
+        </section>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
