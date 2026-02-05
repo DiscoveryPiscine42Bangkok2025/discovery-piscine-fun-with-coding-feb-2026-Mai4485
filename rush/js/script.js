@@ -22,7 +22,7 @@ const profiles = [
         github: "https://github.com/Mai4485",
         projects: [
             { title: "Rack Project", desc: "โปรเจกต์นี้เป็นการจำลองระบบเครือข่ายด้วย Cisco Packet Tracer โดยเชื่อมต่อ PC, Switch และ Router ให้ทุกอุปกรณ์สามารถ Ping หากันได้ด้วย Dynamic Routing ได้เรียนรู้การกำหนด IP Address, Subnet, VLAN รวมถึงการใช้งานอุปกรณ์ Network ทั้งซอฟต์แวร์และการต่อ Rack จริง", img: "../img/Rack.png" },
-            { title: "KMITL-FIREWALL", desc: "โปรเจกต์นี้เป็นแอปแจ้งเตือนป้ายรถโดยสารสำหรับผู้ที่มักหลับบนรถ โดยเลือกป้ายปลายทางแล้วระบบจะแจ้งเตือนด้วยการสั่นเมื่อใกล้ถึงจุดหมาย ใช้ Longdo Map API สำหรับแผนที่ภายใน สจล. และ JavaScript สำหรับแจ้งเตือน", img: "../img/Firewall.png" }
+            { title: "KMITL-NOTIBUSS", desc: "โปรเจกต์นี้เป็นแอปแจ้งเตือนป้ายรถโดยสารสำหรับผู้ที่มักหลับบนรถ โดยเลือกป้ายปลายทางแล้วระบบจะแจ้งเตือนด้วยการสั่นเมื่อใกล้ถึงจุดหมาย ใช้ Longdo Map API สำหรับแผนที่ภายใน สจล. และ JavaScript สำหรับแจ้งเตือน", img: "../img/Firewall.png" }
         ]
     }
 ];
@@ -101,3 +101,4 @@ function switchProfile() {
         content.classList.remove('fade-hide');
     }, 400);
 }
+
